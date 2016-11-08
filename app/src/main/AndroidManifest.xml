@@ -16,8 +16,6 @@
             </intent-filter>
         </activity>
         <!--TODO 1: Declarer le service dans le manifest -->
-        <service android:name="MonService">
-        </service>
     </application>
 
 </manifest>

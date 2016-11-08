@@ -27,10 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v){
-                MonService.shouldContinue = true;
+
                 //TODO 4: Demarrer le service
-                Intent intent = new Intent(MainActivity.this, MonService.class);
-                startService(intent);
+
             }
         });
 
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         getBtn.setOnClickListener( new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), MonService.cpt +"", Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(getApplicationContext(), MonService.cpt +"", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -49,10 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
         stopBtn.setOnClickListener( new View.OnClickListener() {
             public void onClick(View v) {
-                MonService.shouldContinue = false;
+
                 //TODO 5: Arreter le service
-                Intent intent = new Intent(MainActivity.this, MonService.class);
-                stopService(intent);
 
             }
         });
